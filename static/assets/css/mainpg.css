@@ -1,0 +1,203 @@
+body {
+    background: linear-gradient(135deg, #b9bbbd, #cdd1d3); /* Gradient background color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #6e9098b8; /* Dark background color */
+    color: rgb(246, 244, 244); /* Text color */
+    padding: 10px 0; /* Padding for top and bottom */
+    text-align: right; /* Center align text */
+
+}
+header nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+header nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add space between list items */
+}
+header nav ul li:last-child {
+    margin-right: 10px; /* Remove margin-right for last list item */
+}
+header nav ul li a {
+    color: rgb(32, 36, 53);
+    text-decoration: none;
+    font-weight: bold; 
+    font-size: 25px; 
+    
+}
+header img {
+    width: 100px; /* Adjust width of logo */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make sure it doesn't affect other elements */
+    margin: left; /* Center align the image */
+    padding-bottom: 20px; /* Add space below the image */
+}
+#left-text1 {
+    position: absolute;
+    top: 30%;
+    left: 20px; /* Adjust left position */
+    transform: translateY(-50%);
+    color: rgb(98, 220, 157);
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 1; /* Ensure text appears above the background */
+}
+#left-text2 {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Adjust left position */
+    transform: translateY(-50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(187, 205, 192);
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1; /* Ensure text appears above the background */
+}
+
+/* Short line styles */
+.short-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin-bottom: 20px; /* Add some space below the line */
+}
+
+/* Signup heading styles */
+.signup-heading {
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.signup-heading p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+}
+
+/* Signup container styles */
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; Allow boxes to wrap to the next line */
+    flex-direction: column;
+    margin-top: 20px; /* Add margin to the top for separation */
+}
+
+.box {
+    width: calc(33.33% - 20px); /* Adjust width to fit three boxes in one line */
+    height: 350px;
+    padding: 20px;
+    background-color: #140b33; /* Blue color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    
+    font-family: 'Arial', sans-serif; /* Specify an attractive font */
+    text-align: center; /* Center align text */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack child elements vertically */
+    margin-bottom: 20px;
+    /* justify-content: center; Center content vertically */
+}
+
+
+
+.box-right {
+    align-self: flex-end; /* Align this box to the right */
+}  
+    /* Hover effect styles */
+.box:hover {
+    background-color: #242741f1; /* Darker background color on hover */
+    transform: translateY(-15px); /* Move the box up slightly on hover */
+    box-shadow: 0 12px 24px rgba(15, 13, 13, 0.2); /* Add shadow effect on hover */
+    transform: translateY(-5px) scale(1.02); /* Move the box up slightly and scale on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Add transition effect */
+
+
+}
+.box h2{
+    font-size: 30px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+.box p{
+    font-size: 20px;
+    padding-top: 10px;
+    color: #8d9099;
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+/* Signup button styles */
+.signup-button {
+    background-color: #3a733b; /* Green color */
+    color: #fff;
+    border: none;
+    padding: 8px 15px; /* Adjust padding for smaller size */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect */
+    margin-top: 20px; /* Add margin to the top of the button */
+    align-self: center; /* Center the button within the container */
+}
+
+
+.signup-button:hover {
+    background-color: #182a18; /* Darken the background color on hover */
+    border-color: #5a536f; /* Darken the border color on hover */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
